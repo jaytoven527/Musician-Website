@@ -57,33 +57,6 @@ export type AppTourEvent = AppEvent & {
     link: AppLink;
 }
 
-const ate :AppTourEvent = {
-    startDate: '',
-    endDate: '',
-    location: '',
-    link: {
-        href: '', type: 'website'
-    },
-    actions: []
-}
-
-
-
-
-
-type AppLessonEvent = AppEvent & {
-};
-
-export type AppEventList<Event extends AppEvent> = {
-    listTitle: string;
-    events: Event[]
-};
-
-
-export type AppToursEventList = AppEventList<AppTourEvent>;
-export type AppLessonsEventList = AppEventList<AppLessonEvent>;
-
-
 type AppLessonEvent = AppEvent & {
 };
 

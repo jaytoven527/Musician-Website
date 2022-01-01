@@ -1,0 +1,27 @@
+mkdir app;
+cd app;
+
+mpm init -y;                        # create package.json
+npm install typescript ts-node;     # install typescript
+npx tsc --init;                     # create tsconfig.json
+
+mkdir src;
+cd src;
+mkdir types;
+cd types;
+touch index.ts
+
+# not necessary, just mentioning that we're at the root dir
+cd ../../;
+
+
+# modify tsconfig.json
+#   outDir: './dist',
+#   srcDir: './src'
+
+
+# try to compile, see if the dist dir is created
+tsc;
+
+# edit the types for the application
+vim ./src/types/index.ts
